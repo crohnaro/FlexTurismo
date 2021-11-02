@@ -257,9 +257,20 @@ footer .footer{
 
     .apresentacao{
         flex-direction: column-reverse;
+        height: 35vh;
+        
     }
+    
     .apresentacao .texto-apresentacao{
         width: 100%;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .apresentacao img{
+        display:none
     }
 
     #quem-somos{
@@ -267,12 +278,15 @@ footer .footer{
     }
 
     #quem-somos img{
-        min-width: 320px;
-        margin: auto;
+        display: none;
     }
     
     .list-servicos{
         flex-direction: column;
+    }
+
+    .item-servico{
+        margin-bottom: 50px;
     }
 
     .item-servico img{
