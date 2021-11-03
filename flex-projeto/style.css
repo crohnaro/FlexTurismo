@@ -13,11 +13,12 @@ ul{
 
 ul li a{
     text-decoration: none;
+    transition: 0.4s ease-out;
 }
 
 div img{
     display: block;
-    width: 100%;
+    width: 500px
 }
 
 .flex-container{
@@ -27,6 +28,10 @@ div img{
     width: 100%;
     min-width: 320px;
     
+}
+
+.flex-container .menu div h1{
+    display: flex;
 }
 
 header{
@@ -39,14 +44,20 @@ header{
 
 header .list-itens{
     display: flex;
-    max-width: 260px;
-    width: 100%;
-    justify-content: space-between;
+    width: 500px;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .list-itens li a{
     color: #fff;
+    padding: 40px;
+}
+
+.list-itens li a:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    transition: 0.2s ease-in;
 }
 
 header .menu{
@@ -72,15 +83,24 @@ header .menu{
 .btn{
     background-color: #122A57;
     color:#fff;
+    border: #122A57 2px solid;
     text-align: center;
     border-radius: 30px;
     width: 220px;
     display: block;
     text-decoration: none;
-    height: 50px;
-    line-height: 50px;
+    height: 45px;
+    line-height: 45px;
     margin-top: 15px;
     margin-bottom: 15px;
+    transition: ease-out 0.2s;
+}
+
+.btn:hover{
+    background-color: #fff;
+    transition: ease-in 0.2s;
+    color: #122A57;
+    border: #122A57 2px solid;
 }
 
 #quem-somos{
@@ -141,6 +161,7 @@ header .menu{
 .item-servico a{
     width: 220px;
     background-color: #fff;
+    border: #fff 2px solid;
     border-radius: 30px;
     height: 50px;
     text-align: center;
@@ -151,7 +172,16 @@ header .menu{
     color: #122A57;
     font-size: 18px;
     font-weight: 700;
+    transition: ease-out 0.2s;
 }
+
+.item-servico a:hover{
+    background-color: #122A57;
+    border: #fff 2px solid;
+    color: #fff;
+    transition: ease-in 0.2s;
+}
+
 
 .item-servico p{
     font-weight: 700;
